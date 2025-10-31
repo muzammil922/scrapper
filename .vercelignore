@@ -1,0 +1,33 @@
+# Files to ignore for Vercel deployment
+# Only include what's needed for API
+
+# Local development files
+smart_scraper.py
+universal_main.py
+main.py
+quick_start.py
+add_category.py
+auto_updater.py
+google_maps_scraper.py
+youtube_scraper.py
+social_media_scraper.py
+website_scraper.py
+pdf_exporter.py
+universal_aggregator.py
+data_aggregator.py
+
+# Documentation (optional - comment out if you want docs on Vercel)
+*.md
+*.txt
+
+# Config files (keep only generic_config.py if needed)
+config.py
+
+# Old scrapers
+google_search_scraper.py
+wikipedia_scraper.py
+
+# Scripts
+*.sh
+*.ps1
+

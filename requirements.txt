@@ -1,3 +1,4 @@
+# Local development (full features)
 selenium==4.15.2
 beautifulsoup4==4.12.2
 requests==2.31.0
@@ -15,4 +16,10 @@ reportlab==4.0.7
 fpdf2==2.7.6
 schedule==1.2.0
 tqdm==4.66.1
+
+# Vercel/serverless compatible (minimal)
+# For Vercel, only these are needed:
+# requests==2.31.0
+# beautifulsoup4==4.12.2
+# lxml==4.9.3
 
