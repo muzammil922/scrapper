@@ -1,0 +1,24 @@
+# Local development requirements (full features)
+# Install with: pip install -r requirements-local.txt
+
+# Base (also used by Vercel)
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Local-only (not for Vercel)
+selenium==4.15.2
+pandas==2.1.3
+openpyxl==3.1.2
+webdriver-manager==4.0.1
+fake-useragent==1.4.0
+python-dotenv==1.0.0
+playwright==1.40.0
+undetected-chromedriver==3.5.4
+youtube-dl==2021.12.17
+yt-dlp==2023.11.16
+reportlab==4.0.7
+fpdf2==2.7.6
+schedule==1.2.0
+tqdm==4.66.1
+
