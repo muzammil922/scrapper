@@ -1,0 +1,104 @@
+================================================================================
+🌍 UNIVERSAL GLOBAL DATA SCRAPER - QUICK START GUIDE
+================================================================================
+
+STEP 1: INSTALL PYTHON
+----------------------
+1. Download Python 3.8+ from: https://www.python.org/downloads/
+2. During installation, CHECK "Add Python to PATH"
+3. Verify: Open Command Prompt, type "python --version"
+
+STEP 2: INSTALL DEPENDENCIES
+-----------------------------
+Open Command Prompt in this folder, run:
+   pip install -r requirements.txt
+
+STEP 3: INSTALL CHROME BROWSER
+-------------------------------
+- Make sure Google Chrome is installed
+- ChromeDriver will auto-install
+
+STEP 4: RUN THE SCRAPER
+------------------------
+python universal_main.py
+
+You'll see a menu:
+   1. Scrape ALL categories (takes very long time!)
+   2. Scrape specific categories (enter numbers)
+   3. Quick test (recommended for first time)
+
+RECOMMENDED: Start with option 3 (Quick Test)
+
+STEP 5: CHECK OUTPUT FILES
+---------------------------
+After scraping completes, you'll get:
+   - universal_scraped_data.csv
+   - universal_scraped_data.xlsx  
+   - universal_scraped_data.json
+
+================================================================================
+
+CUSTOMIZE CATEGORIES:
+---------------------
+Edit: generic_config.py
+
+Add your category:
+   "my_category": {
+       "query": "search query here",
+       "platforms": ["youtube", "wikipedia", "google"],
+       "type": "my_type"
+   }
+
+AVAILABLE PLATFORMS:
+--------------------
+- youtube (videos, music, channels)
+- wikipedia (articles, knowledge)
+- google (web search, images, videos, news)
+- spotify (coming soon)
+- imdb (coming soon)
+
+EXAMPLE CATEGORIES YOU CAN ADD:
+--------------------------------
+- "python_tutorials": "python programming tutorials"
+- "recipe_videos": "cooking recipes"
+- "workout_videos": "fitness exercise"
+- "comedy_clips": "funny videos"
+- "news_pakistan": "pakistan news"
+- "tech_reviews": "technology reviews"
+
+ANYTHING YOU WANT TO SCRAPE!
+
+================================================================================
+
+TROUBLESHOOTING:
+----------------
+❌ "Module not found" error?
+   → Run: pip install -r requirements.txt
+
+❌ Chrome driver error?
+   → Make sure Chrome browser is installed
+   → Run: pip install --upgrade undetected-chromedriver
+
+❌ No results?
+   → Check internet connection
+   → Try reducing max_results in generic_config.py
+
+❌ Too slow?
+   → Normal! Scraping takes time
+   → Reduce number of categories
+   → Reduce max_results_per_category
+
+================================================================================
+
+IMPORTANT NOTES:
+----------------
+✅ Adult content is automatically filtered
+✅ Only public data is scraped
+✅ Respects rate limits (2 sec delay)
+✅ Can scrape billions of data points
+✅ Fully customizable
+
+================================================================================
+
+Happy Scraping! 🚀
+

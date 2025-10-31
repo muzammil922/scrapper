@@ -1,0 +1,65 @@
+================================================================================
+PAKISTAN HOSPITALS & CLINICS DATA SCRAPER - SETUP INSTRUCTIONS
+================================================================================
+
+STEP 1: INSTALL PYTHON
+----------------------
+1. Download Python 3.8 or higher from: https://www.python.org/downloads/
+2. During installation, CHECK "Add Python to PATH"
+3. Verify installation by opening Command Prompt/Terminal and typing:
+   python --version
+
+STEP 2: INSTALL DEPENDENCIES
+-----------------------------
+Open Command Prompt/Terminal in this folder and run:
+   pip install -r requirements.txt
+
+STEP 3: INSTALL CHROME BROWSER
+-------------------------------
+- Make sure Google Chrome is installed on your computer
+- The scraper will automatically download ChromeDriver if needed
+
+STEP 4: RUN THE SCRAPER
+------------------------
+For testing (small amount of data):
+   python quick_start.py
+
+For full scraping (all categories and cities):
+   python main.py
+
+OUTPUT FILES
+------------
+- pakistan_hospitals_clinics_data.csv
+- pakistan_hospitals_clinics_data.xlsx
+
+CONFIGURATION
+-------------
+Edit config.py to:
+- Add/remove categories
+- Add/remove cities
+- Adjust scraping settings
+
+TROUBLESHOOTING
+---------------
+1. If Chrome driver issues occur:
+   - Make sure Chrome browser is installed
+   - The scraper uses undetected-chromedriver which should auto-install
+
+2. If no results appear:
+   - Check internet connection
+   - Some websites may block automated access
+   - Try running with headless=False in config.py to see browser
+
+3. If scraping is slow:
+   - This is normal - the scraper visits multiple sources per listing
+   - Reduce number of cities/categories in config.py for faster results
+
+IMPORTANT NOTES
+---------------
+- Scraping takes time - be patient
+- Data is collected from public sources only
+- Verify important information before using
+- Respect website terms of service
+
+================================================================================
+
